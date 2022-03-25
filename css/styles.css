@@ -359,11 +359,13 @@ header {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
-  width: 41px;
-  height: 46.7px;
 }
 
 /* footer */
