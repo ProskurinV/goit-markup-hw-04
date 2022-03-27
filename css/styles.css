@@ -150,12 +150,12 @@ img {
 
 .header-contact-list .mail:hover,
 .header-contact-list .mail:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .header-contact-list .phone:hover,
 .header-contact-list .phone:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .icon-mail {
@@ -323,6 +323,7 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+
 .our-team-title {
   color: var(--title-text-color);
   line-height: 1.17;
@@ -338,7 +339,19 @@ header {
 .our-team-foto .item {
   flex-basis: calc(100% / 4 - var(--pictures-margin));
   margin-left: var(--pictures-margin);
+
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+
+  border-radius: 0px 0px 4px 4px;
 }
+
+.card-team-content {
+  background-color: var(--bg-color);
+  padding-top: 30px;
+}
+
 .our-team-name {
   font-weight: 500;
   font-size: 16px;
@@ -355,10 +368,53 @@ header {
   text-align: center;
 }
 
-.card-team-content {
+.social-links {
   background-color: var(--bg-color);
-  padding-top: 30px;
+
+  padding-top: 16px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.our-team-links {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  display: inline-block;
+
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.bg-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  background-color: var(--bg-color);
+  fill: currentColor;
+
+  width: 44px;
+  height: 44px;
+}
+
+.bg-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--bg-color);
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+
+  /* align-items: center; */
 }
 
 .clients {
