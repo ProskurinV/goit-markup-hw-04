@@ -339,7 +339,6 @@ header {
 .our-team-foto .item {
   flex-basis: calc(100% / 4 - var(--pictures-margin));
   margin-left: var(--pictures-margin);
-
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
@@ -377,44 +376,38 @@ header {
   padding-right: 32px;
 }
 
-.our-team-links {
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-
 .link {
   display: inline-block;
+  align-items: center;
+  justify-content: center;
 
   margin-right: auto;
   margin-left: auto;
-  justify-content: center;
 }
 
 .bg-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
 
-  background-color: var(--bg-color);
-  fill: currentColor;
+  color: #afb1b8;
+
+  border-radius: 50%;
 
   width: 44px;
   height: 44px;
 }
 
 .bg-link:hover {
+  color: var(--bg-color);
   background-color: var(--accent-color);
-  fill: var(--bg-color);
 }
 
 .social-link {
-  width: 44px;
-  height: 44px;
-  color: #afb1b8;
+  fill: currentColor;
 
-  /* align-items: center; */
+  width: 20px;
+  height: 20px;
 }
 
 .clients {
