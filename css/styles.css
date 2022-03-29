@@ -150,12 +150,12 @@ img {
 
 .header-contact-list .mail:hover,
 .header-contact-list .mail:focus {
-  fill: currentColor;
+  fill: var(--accent-color);
 }
 
 .header-contact-list .phone:hover,
 .header-contact-list .phone:focus {
-  fill: currentColor;
+  fill: var(--accent-color);
 }
 
 .icon-mail {
@@ -171,11 +171,6 @@ img {
 
   margin-right: 10px;
 }
-
-/* .header-contact-list-icon:hover,
-.header-contact-list-icon:focus {
-  fill: var(--accent-color);
-} */
 
 header {
   border-bottom: 1px solid #ececec;
@@ -339,9 +334,8 @@ header {
 .our-team-foto .item {
   flex-basis: calc(100% / 4 - var(--pictures-margin));
   margin-left: var(--pictures-margin);
-  box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024;
-  box-shadow: 0px 1px 3px 0px #0000001f;
+
+  box-shadow: 0px 4px 4px 0px #00000040;
 
   border-radius: 0px 0px 4px 4px;
 }
@@ -490,6 +484,52 @@ footer .text {
   margin-bottom: 9px;
 }
 
+.footer-join {
+  padding-left: 516px;
+}
+
+.join {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--bg-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-links {
+}
+
+.footer-bg-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff1a;
+  border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.footer-bg-link:hover {
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+}
+
+.footer-social-link {
+  fill: var(--bg-color);
+
+  width: 20px;
+  height: 20px;
+}
+
 /* PORTFOLIO */
 .works {
   padding-top: 94px;
@@ -539,13 +579,11 @@ footer .text {
 .pictures {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: tomato; */
+
   margin-left: calc(-1 * var(--pictures-margin));
   margin-top: calc(-1 * var(--pictures-margin));
-  /* padding-bottom: 94px; */
 }
 .pictures .item {
-  /* outline: solid 1px red; */
   flex-basis: calc(100% / 3 - var(--pictures-margin));
   margin-left: var(--pictures-margin);
   margin-top: var(--pictures-margin);
@@ -553,9 +591,7 @@ footer .text {
 
 .pictures .item:hover,
 .pictures .item:focus {
-  box-shadow: 1px 4px 6px 0px #00000029;
-  box-shadow: 0px 4px 4px 0px #0000000f;
-  box-shadow: 0px 1px 1px 0px #0000001f;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .border {
