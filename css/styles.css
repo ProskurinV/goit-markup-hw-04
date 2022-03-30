@@ -161,8 +161,8 @@ img {
 .icon-mail {
   margin-right: 10px;
 
-  width: 16px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
 }
 
 .icon-phone {
@@ -256,7 +256,7 @@ header {
   background-position: center;
 }
 
-.icon-antenna::before {
+/* .icon-antenna::before {
   background-image: url(../images/antenna.svg);
 }
 .icon-clock::before {
@@ -267,7 +267,7 @@ header {
 }
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 
 .feature-title {
   font-weight: 700;
@@ -367,17 +367,11 @@ header {
   padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
-
-  /* border-radius: 0px 0px 4px 4px; */
+  border-radius: 0px 0px 4px 4px;
 }
 
-.link {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-
-  margin-right: auto;
-  margin-left: auto;
+.our-team-links {
+  display: flex;
 }
 
 .bg-link {
@@ -391,6 +385,10 @@ header {
 
   width: 44px;
   height: 44px;
+}
+
+.link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .bg-link:hover {
@@ -516,8 +514,6 @@ footer .text {
   align-items: center;
   justify-content: center;
 
-  margin-right: 10px;
-
   background-color: #ffffff1a;
   width: 44px;
   height: 44px;
@@ -526,7 +522,7 @@ footer .text {
   border-radius: 50%;
 }
 
-.footer-bg-link:last-child {
+.link:not(:last-child) {
   margin-right: 10px;
 }
 
