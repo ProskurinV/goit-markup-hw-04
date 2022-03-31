@@ -384,6 +384,8 @@ header {
 
   width: 44px;
   height: 44px;
+
+  border-radius: 0px 0px 4px 4px;
 }
 
 .link:not(:last-child) {
@@ -448,6 +450,11 @@ header {
 
 .icon {
   fill: #afb1b8;
+}
+
+.icon {
+  width: 106px;
+  height: 60px;
 }
 
 /* footer */
