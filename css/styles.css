@@ -448,6 +448,10 @@ header {
   fill: var(--accent-color);
 }
 
+.our-clients .item:hover {
+  border: 1px solid var(--accent-color);
+}
+
 .icon {
   fill: #afb1b8;
 }
