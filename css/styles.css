@@ -243,10 +243,22 @@ header {
   flex-basis: calc(100% / 4 - var(--pictures-margin));
   margin-left: var(--pictures-margin);
 }
-.features-list .item:not(:last-child) {
-  margin-right: 30px;
+
+.features-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--btn-bg-color);
+  margin-bottom: 30px;
 }
 
+.icons {
+  width: 70px;
+  height: 70px;
+}
+
+/* 
 .features-list .item::before {
   display: block;
   content: '';
